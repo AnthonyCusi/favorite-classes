@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Class from "../Class/Class"
 import "./Home.css"
 
@@ -21,6 +21,10 @@ function Home(props) {
 
         console.log(favoriteClasses)
     }
+
+    useEffect(() => {
+        document.title = "Favorite Classes"
+    });
 
     return (
         <body>
